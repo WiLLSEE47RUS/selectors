@@ -82,6 +82,10 @@ const createVariantImgChild = (imageObject) => {
   const image = document.createElement('img')
   const heading = document.createElement('h1')
   image.src = imageObject.imgSrc;
+  image.setAttribute('id', imageObject.id);
+  image.setAttribute('name', imageObject.name);
+  image.setAttribute('class', imageObject.class);
+  image.setAttribute('data-type', imageObject['data-type']);
   heading.textContent = imageObject.heading
   rootDiv.classList.add('imageContainer');
   rootDiv.classList.add('box-shadow');
