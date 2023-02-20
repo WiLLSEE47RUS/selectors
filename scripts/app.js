@@ -1,3 +1,5 @@
+const VARIANTS_AMOUNT = 31;
+
 const variantsContainer = document.querySelector('.variants__content');
 const galleryContainer = document.querySelector('.gallery__content');
 
@@ -94,6 +96,6 @@ const createVariantImgChild = (imageObject) => {
   return rootDiv;
 }
 
-for (let i = 0; i < 30; i++) {
+for (let i = 0; i < VARIANTS_AMOUNT; i++) {
   variantsContainer.append(createVariantBtnChild(i))
 }
