@@ -184,3 +184,33 @@ main {
     flex: 1 0 100%;
   }
 }
+.the_best_of_the_best {
+  animation: heartbeat .9s infinite ease-in-out;
+}
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .85 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .85 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .85 );
+  }
+  100%
+  {
+    transform: scale( .85 );
+  }
+}
